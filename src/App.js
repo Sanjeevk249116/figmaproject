@@ -15,10 +15,10 @@ function App() {
  },[])
   return (
     <Flex className="App">
-     <Box width={'19%'}>
+     <Box width={'249px'}>
      <SlideBar/>
      </Box>
-   <Box w={'80%'}>
+   <Box w={'83%'}>
     <Homes/>
    </Box>
     </Flex>

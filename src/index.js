@@ -6,12 +6,15 @@ import {Provider} from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react'
 import reportWebVitals from './reportWebVitals';
 import { store } from './redux/store';
+import ContextData from './authContex/ContextData';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
   <ChakraProvider>
-      <App />
+     <ContextData>
+     <App />
+     </ContextData>
   </ChakraProvider>
   </Provider>
   

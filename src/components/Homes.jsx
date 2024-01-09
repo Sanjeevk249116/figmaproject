@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box, Flex, Image } from "@chakra-ui/react";
 import image1 from "../image/Screenshot (639).png";
 import image2 from "../image/Screenshot (640).png";
 import image3 from "../image/Screenshot (642).png";
+import ChartsPart from "./ChartsPart";
+import PieChart from "./PieChart";
+import { authContextValue } from "../authContex/ContextData";
 
 function Homes() {
-  return (
+  const{cate}=useContext(authContextValue)
+ return (
     <div className="main">
       <div className="topMain">
         <div className="topMainp1">
@@ -37,7 +41,7 @@ function Homes() {
               fill="#02AB6C"
             />
           </svg>
-          <span className="changes">{"cat"}</span>
+          <span className="changes">{cate}</span>
         </div>
         <div className="topMainp2">
           <Image
@@ -165,7 +169,7 @@ function Homes() {
         </div>
         <div className="secondMain1">
           <p className="secp">
-            Current Year Emissions
+            {cate}
             <svg
               className="linkimg"
               xmlns="http://www.w3.org/2000/svg"
@@ -203,6 +207,8 @@ function Homes() {
           <p>143</p>
         </Box>
       </div>
+      <ChartsPart/>
+      <PieChart/>
     </div>
   );
 }
