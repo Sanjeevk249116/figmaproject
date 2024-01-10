@@ -3,7 +3,7 @@
 Explore the My React application here! Follow the links for the live app and the project presentation.
 
 <h2>Live Link: https://figmaproject-zeta.vercel.app/</h2>
-<h2>Project Presentation: View Presentation</h2>
+<h2>Project Presentation:https://drive.google.com/file/d/1p_Wfq8roDJyKMrPevz6WemjpHDnQ5ler/view?usp=sharing</h2>
 
 <h2>Overview</h2>
 This React project showcases a blend of technologies, including React, Redux, HTML, CSS, JavaScript, Chakra-UI, and Chart.js. It incorporates dynamic table components for a seamless user experience.
