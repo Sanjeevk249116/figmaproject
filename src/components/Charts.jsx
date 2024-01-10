@@ -90,8 +90,8 @@ function Charts() {
 
     setEmission222(emission2222);
     setEmission233(emission2333);
-    setR_E222(e_R2222)
-    setR_E233(e_R2333)
+    setR_E222(e_R2222);
+    setR_E233(e_R2333);
   }, [num]);
 
   const [series, setSeries] = useState([
@@ -170,12 +170,12 @@ function Charts() {
       {
         name: "R/E-2023",
         type: "line",
-        data: r_E233.length!=0?r_E233:RE_23,
+        data: r_E233.length != 0 ? r_E233 : RE_23,
       },
       {
         name: "R/E-2022",
         type: "line",
-        data: r_E222.length!=0?r_E222:RE_22,
+        data: r_E222.length != 0 ? r_E222 : RE_22,
       },
     ]);
   }, [dt, num]);
