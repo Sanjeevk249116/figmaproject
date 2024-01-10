@@ -2,7 +2,7 @@
 <h1> React App</h1>
 Explore the My React application here! Follow the links for the live app and the project presentation.
 
-<h2>Live Link:</h2>
+<h2>Live Link:https://figmaproject-zeta.vercel.app/</h2>
 <h2>Project Presentation:https://drive.google.com/file/d/1p_Wfq8roDJyKMrPevz6WemjpHDnQ5ler/view?usp=sharing</h2>
 
 
