@@ -24,9 +24,10 @@ Chart.js: Flexible JavaScript charting library.
 Tables: Included for structured data display.
 
 <h3>Screenshots</h3>
-<img src='../figmaproject/src/image/Screenshot (643).png' alt='img' />
-<img src='../figmaproject/src/image/Screenshot (644).png' alt='img' />
-<img src='../figmaproject/src/image/Screenshot (645).png' alt='img' />
+<img src='https://i.ibb.co/rc95w41/Screenshot-643.png' alt='img' />
+<img src='https://i.ibb.co/LtsXNk5/Screenshot-644.png' alt='img' />
+<img src='https://i.ibb.co/LCMBDjY/Screenshot-645.png' alt='img' />
+
 
 
 # Getting Started with Create React App
