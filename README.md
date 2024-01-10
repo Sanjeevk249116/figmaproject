@@ -2,7 +2,7 @@
 <h1> React App</h1>
 Explore the My React application here! Follow the links for the live app and the project presentation.
 
-<h2>Live Link: https://effulgent-melba-8ff631.netlify.app/</h2>
+<h2>Live Link: https://figmaproject-zeta.vercel.app/</h2>
 <h2>Project Presentation: View Presentation</h2>
 
 <h2>Overview</h2>
