@@ -5,7 +5,7 @@ import { Flex } from '@chakra-ui/react'
 
 function PieChart() {
   return (
-    <Flex style={{marginTop:"16px" , marginLeft:"22px"}} >
+    <Flex style={{marginTop:"16px" , marginLeft:"22px"}} className='pieres'  >
       
         <Pies/>
         <Tables/>

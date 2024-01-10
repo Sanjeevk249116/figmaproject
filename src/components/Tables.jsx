@@ -4,7 +4,7 @@ import TableData from "./TableData";
 
 function Tables() {
   return (
-    <div style={{ marginLeft: "33px" }} className="tableMain">
+    <div className="tableMain">
       <Box className="tabBox">
         <Flex justifyContent="space-between">
           <Flex>

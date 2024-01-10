@@ -6,6 +6,7 @@ import image3 from "../image/Screenshot (642).png";
 import ChartsPart from "./ChartsPart";
 import PieChart from "./PieChart";
 import { authContextValue } from "../authContex/ContextData";
+import Slides from "./Slides";
 
 function Homes() {
   const{cate,setNum}=useContext(authContextValue)
@@ -13,6 +14,9 @@ function Homes() {
     <div className="main">
       <div className="topMain">
         <div className="topMainp1">
+          <div className="silderes">
+            <Slides/>
+          </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"

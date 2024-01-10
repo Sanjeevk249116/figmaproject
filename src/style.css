@@ -102,7 +102,7 @@
   font-size: 14px;
 }
 .linkimg {
-  margin-top: 6px;
+  margin-top: 4px;
 }
 .secp + p {
   color: rgba(0, 0, 0, 0.67);
@@ -260,9 +260,9 @@
   line-height: 18px; /* 150% */
 }
 .piesMain {
-   width: 459px; 
+  width: 459px;
   /* width: 37%; */
- height: 471px;
+  height: 471px;
   flex-shrink: 0;
   border-radius: 12px;
   border: 1px solid #ebebeb;
@@ -272,7 +272,7 @@
 .pies1 {
   display: flex;
   /* width: 459px; */
- 
+
   height: 64px;
   padding: 20px;
   justify-content: space-between;
@@ -329,7 +329,7 @@
   flex-shrink: 0;
   border-radius: 12px;
   border: 1px solid #ebebeb;
-
+margin-left: 33px;
   background: #fff;
 }
 .tabBox {
@@ -404,24 +404,103 @@ td {
   height: 447px;
   flex-shrink: 0;
 }
+.widt1{
+  width: 83%;
+}
 
-@media screen and (max-width: 1300px){
-.main1chart{
-  width: 95%;
-}
-.piesMain{
-  width: 37%;
-}
-.tableMain{
+@media screen and (max-width: 1300px) {
+  .main1chart {
+    width: 95%;
+  }
+  .piesMain {
+    width: 37%;
+  }
+  .tableMain {
     width: 52%;
+  }
+  table {
+    width: 100%;
+  }
+  .dt1 {
+    right: 28px;
+  }
+  .chart1{
+    margin: auto;
+    margin-top: 30px;
+  }
+  .tableMain{
+    width: 80%;
+   margin: auto;
+   margin-top: 40px;
+  
+  }
 }
-table{
-  width: 100%;
+@media screen and (max-width: 1240px) and (min-width: 1000px) {
+  .secp {
+    font-size: 9px;
+  }
+  .linkimg {
+    margin-top: 2px;
+  }
 }
-.dt1{
-  right: 28px;
+@media screen and (max-width: 1000px)  {
+  .secondMain {
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+  }
+
+  .pieres {
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: 22px;
+  }
+  .piesMain{
+    width: 70%;
+    margin: auto;
+  }
 }
+@media screen and (max-width: 720px)  {
+  td,th{
+    padding: 5px;
+  }
+  .tableMain{
+    height: 350px;
+  }
+  .piesMain{
+    height: 415px;
+  }
+  .secondMain{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .lastDiv{
+    width: 50%;
+    margin: auto;
+  }
 }
-@media screen and (max-width: 1240px){
- 
+@media screen and (max-width: 650px)  {
+  th,td{
+    padding: 1px;
+  }
+  .tableMain{
+    height: 260px;
+  }
 }
+@media screen and (max-width: 600px)  {
+  th,td{
+    padding: 0px;
+  }
+  .sideBarBox {
+    display: none;
+  }
+  .widt1{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px){
+  .silderes{
+    display: none;
+  }
+}
+
