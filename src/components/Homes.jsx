@@ -8,7 +8,7 @@ import PieChart from "./PieChart";
 import { authContextValue } from "../authContex/ContextData";
 
 function Homes() {
-  const{cate}=useContext(authContextValue)
+  const{cate,setNum}=useContext(authContextValue)
  return (
     <div className="main">
       <div className="topMain">
@@ -90,11 +90,11 @@ function Homes() {
       <Flex justifyContent={"end"} width={"full"} pt={"10px"}>
         <div className="second">
           <p className="timeshow">Show Time:</p>
-          <select className="sections">
-            <option value="data1">Mar'23 - Apr'23</option>
-            <option value="data2">Feb'23 - Aug'23</option>
-            <option value="data3">Apr'23 - Jun'23</option>
-            <option value="data4">Jan'23 - Nov'23</option>
+          <select className="sections" onClick={(e)=>setNum(e.target.value)}>
+            <option value="0">Mar'23 - Apr'23</option>
+            <option value="3">Feb'23 - Aug'23</option>
+            <option value="6">Apr'23 - Jun'23</option>
+            <option value="9">Jan'23 - Nov'23</option>
           </select>
         </div>
       </Flex>
