@@ -8,6 +8,8 @@ function Charts() {
   const { num } = useContext(authContextValue);
   const [emission222, setEmission222] = useState("");
   const [emission233, setEmission233] = useState("");
+  const [r_E222, setR_E222] = useState("");
+  const [r_E233, setR_E233] = useState("");
   const [cartHeight, setCartHeight] = useState(400);
   let emiValue = [];
   const dispatch = useDispatch();
@@ -53,6 +55,28 @@ function Charts() {
 
     return arrData;
   };
+  const rotateDataRE22 = (val) => {
+    let arrData = [];
+    for (var i = val; i < RE_22.length; i++) {
+      arrData.push(RE_22[i]);
+    }
+    for (var i = 0; i < val; i++) {
+      arrData.push(RE_22[i]);
+    }
+
+    return arrData;
+  };
+  const rotateDataRE23 = (val) => {
+    let arrData = [];
+    for (var i = val; i < RE_23.length; i++) {
+      arrData.push(RE_23[i]);
+    }
+    for (var i = 0; i < val; i++) {
+      arrData.push(RE_23[i]);
+    }
+
+    return arrData;
+  };
 
   useEffect(() => {
     dispatch(getData());
@@ -61,9 +85,13 @@ function Charts() {
   useEffect(() => {
     const emission2222 = rotateData22(num);
     const emission2333 = rotateData23(num);
+    const e_R2222 = rotateDataRE22(num);
+    const e_R2333 = rotateDataRE23(num);
 
     setEmission222(emission2222);
     setEmission233(emission2333);
+    setR_E222(e_R2222)
+    setR_E233(e_R2333)
   }, [num]);
 
   const [series, setSeries] = useState([
@@ -142,12 +170,12 @@ function Charts() {
       {
         name: "R/E-2023",
         type: "line",
-        data: RE_23,
+        data: r_E233.length!=0?r_E233:RE_23,
       },
       {
         name: "R/E-2022",
         type: "line",
-        data: RE_22,
+        data: r_E222.length!=0?r_E222:RE_22,
       },
     ]);
   }, [dt, num]);
